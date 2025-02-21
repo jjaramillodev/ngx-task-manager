@@ -1,27 +1,24 @@
 # NgxTaskManager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+  - Permite crear tareas.
+  - Permite listar tareas.
+  - Permite cambiar el estado de las tareas.
 
-## Development server
+## Recursos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+  - Desarrollado con Angular 18.
+  - Prototipo en [Figma](https://www.figma.com/design/OoK562k2h8kw6Lb1VUWdyW/Ngx-Task-Manager?node-id=0-1&t=SvDmXgcBADZU7wkM-1).
 
-## Code scaffolding
+## Servidor de Desarrollo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  1. Ejecute `ng serve` para un servidor de desarrollo.
+  2. Navegue a `http://localhost:4200/`.
 
-## Build
+## Build de Aplicación
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+  1. Ejecute `ng build` para construir el proyecto.
+  2. Los archivos se almacenarán en el directorio `dist/`.
 
-## Running unit tests
+## Ejecutar test unitarios
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+  1. Ejecute `ng test` para ejecutar las pruebas unitarias a través de [Karma](https://karma-runner.github.io).

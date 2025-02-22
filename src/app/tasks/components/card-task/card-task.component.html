@@ -1,0 +1,19 @@
+<div class="card">
+  @if (task(); as t) {
+    <div class="card__header">
+      <app-badge-state
+        [state]="t.state?.title"
+      />
+      <app-expiration-state
+        [expiration]="t.expiration_date"
+        [state]="t.state?.title"
+      />
+    </div>
+    <div class="card_body">
+      <p>{{ t.title }}</p>
+    </div>
+    <div class="card_footer">
+      <app-button-state />
+    </div>
+  }
+</div>

@@ -23,4 +23,11 @@ export class TasksService {
   createTask(task: Partial<TaskI>): Observable<ResponseTaskI> {
     return this._http.post<ResponseTaskI>(`${this._apiUrl}/tasks`, task);
   }
+
+  nextState(id: number): Observable<ResponseTaskI> {
+    return this._http.put<ResponseTaskI>(
+      `${this._apiUrl}/tasks/${id}/next-state`,
+      {}
+    );
+  }
 }

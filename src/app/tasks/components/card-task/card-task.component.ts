@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, EventEmitter, input, Output } from '@angular/core';
 import { TaskI } from '@tasks/interfaces/task.interface';
 import { BadgeStateComponent } from './badge-state/badge-state.component';
 import { ButtonStateComponent } from './button-state/button-state.component';
@@ -17,4 +17,9 @@ import { ExpirationStateComponent } from './expiration-state/expiration-state.co
 })
 export class CardTaskComponent {
   task = input.required<TaskI>();
+  @Output() nextState = new EventEmitter<void>();
+
+  get viewNextButton(): boolean {
+    return this.task().state_id < 3;
+  }
 }

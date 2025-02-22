@@ -1,1 +1,10 @@
-<p>list-task works!</p>
+<div class="list-tasks">
+  @for (task of tasks(); track task.id) {
+    <app-card-task
+      [task]="task"
+      (nextState)="nextState(task.id)"
+    />
+  } @empty {
+    <p>Agrega tareas para visualizarlas aquí</p>
+  }
+</div>

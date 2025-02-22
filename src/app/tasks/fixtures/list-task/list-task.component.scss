@@ -1,0 +1,10 @@
+.list-tasks {
+  display: grid;
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-tasks {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}

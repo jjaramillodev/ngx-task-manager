@@ -12,8 +12,10 @@
     <div class="card_body">
       <p>{{ t.title }}</p>
     </div>
-    <div class="card_footer">
-      <app-button-state />
-    </div>
+    @if (viewNextButton) {
+      <div class="card_footer">
+        <app-button-state (nextState)="nextState.emit()" />
+      </div>
+    }
   }
 </div>

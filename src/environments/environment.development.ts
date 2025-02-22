@@ -1,5 +1,5 @@
 export const environment = {
   apiTasks: {
-    url: 'http://localhost/',
+    url: 'http://localhost',
   },
 };

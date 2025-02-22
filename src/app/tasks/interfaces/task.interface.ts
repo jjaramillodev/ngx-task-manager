@@ -1,5 +1,7 @@
+export type TaskStateT = 'pending' | 'progress' | 'completed' | 'late';
+
 export interface TaskStateI {
-  title: string;
+  title: TaskStateT;
   description: string;
 }
 

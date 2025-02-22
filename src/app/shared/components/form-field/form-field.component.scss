@@ -7,14 +7,14 @@ $color-error: #e00c0c;
 .field__label {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 5px;
 }
 
 ::ng-deep .field__input {
   font-size: 1rem;
   border: 1px solid #ccc;
   padding: 10px;
-  border-radius: 2px;
+  border-radius: 4px;
   resize: none;
   &.ng-invalid.ng-touched {
     border-color: $color-error;

@@ -17,7 +17,7 @@ export class FormTaskInit {
         Validators.minLength(3),
         Validators.maxLength(255),
       ]),
-      expiration_date: this._fb.control<Date | null>(null, [
+      expiration_date: this._fb.control<string | null>(null, [
         Validators.pattern(this._dateValid),
       ]),
     });

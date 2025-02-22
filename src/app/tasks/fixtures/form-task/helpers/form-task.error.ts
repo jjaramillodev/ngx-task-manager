@@ -14,7 +14,7 @@ export class FormTaskError {
       : '';
   }
 
-  errorControlExpirationDate(control: FormControl<Date | null>): string {
+  errorControlExpirationDate(control: FormControl<string | null>): string {
     return control.hasError('pattern')
       ? 'La fecha de vencimiento no es válida'
       : '';

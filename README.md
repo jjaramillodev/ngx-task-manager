@@ -19,6 +19,6 @@
   1. Ejecute `ng build` para construir el proyecto.
   2. Los archivos se almacenarán en el directorio `dist/`.
 
-## Ejecutar test unitarios
+## TODO
 
-  1. Ejecute `ng test` para ejecutar las pruebas unitarias a través de [Karma](https://karma-runner.github.io).
+  1. Pruebas unitarias.

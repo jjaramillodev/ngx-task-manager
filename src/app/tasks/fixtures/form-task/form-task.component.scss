@@ -1,0 +1,22 @@
+.container-form {
+  padding: 20px;
+  background-color: var(--color-white);
+  border-radius: 8px;
+  .form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    input[type="date"] {
+      width: fit-content;
+    }
+    &__submit {
+      width: fit-content;
+      margin-left: auto;
+      font-size: 1rem;
+      color: var(--color-white);
+      padding: 8px 16px;
+      background-color: #7D3CDF;
+      border-radius: 5px;
+    }
+  }
+}

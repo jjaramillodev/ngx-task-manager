@@ -1,1 +1,17 @@
-<p>form-task works!</p>
+<div class="container-form">
+  <form [formGroup]="formTask" (ngSubmit)="sendForm()" class="form">
+    <app-form-field
+      label="Título"
+      [errors]="errorControlTitle()"
+    >
+      <textarea appFormField [formControl]="ctrlsFormTask.title" rows="3"></textarea>
+    </app-form-field>
+    <app-form-field
+      label="Fecha de Vencimiento"
+      [errors]="errorControlExpirationDate()"
+    >
+      <input appFormField type="date" [formControl]="ctrlsFormTask.expiration_date" />
+    </app-form-field>
+    <button class="form__submit" type="submit">Nueva Tarea</button>
+  </form>
+</div>

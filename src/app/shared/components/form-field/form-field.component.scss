@@ -1,0 +1,37 @@
+$color-error: #e00c0c;
+
+.form__field {
+
+}
+
+.field__label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+::ng-deep .field__input {
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 2px;
+  resize: none;
+  &.ng-invalid.ng-touched {
+    border-color: $color-error;
+    & + .field__error {
+      opacity: 1;
+    }
+  }
+}
+
+.field__title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.field__error {
+  font-size: .7em;
+  color: $color-error;
+  opacity: 0;
+  transition: opacity .3s ease;
+}

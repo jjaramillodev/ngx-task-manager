@@ -1,0 +1,9 @@
+<div class="form__field">
+  <label class="field__label">
+    <span class="field__title">{{ label() }}:</span>
+    <ng-content selector="[appFormField]"></ng-content>
+    @if (errors(); as errors) {
+      <span class="field__error">{{ errors }}</span>
+    }
+  </label>
+</div>

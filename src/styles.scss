@@ -10,6 +10,10 @@
 :root {
   --color-background: #E6E6E6;
   --color-white: #FFFFFF;
+  --color-pending: #9C9C9C;
+  --color-progress: #F99A22;
+  --color-complete: #8CC63E;
+  --color-late: #dc3545;
 }
 
 *, *::before, *::after {

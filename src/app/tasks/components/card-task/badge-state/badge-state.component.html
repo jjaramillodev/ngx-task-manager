@@ -1,1 +1,5 @@
-<p>{{ state() }}</p>
+@if (state(); as s) {
+  <div class="badge" [ngClass]="badgeClass" title="Estado de la tarea">
+    <span>{{ s | taskState }}</span>
+  </div>
+}

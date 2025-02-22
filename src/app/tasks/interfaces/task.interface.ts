@@ -1,4 +1,4 @@
-export type TaskStateT = 'pending' | 'progress' | 'completed' | 'late';
+export type TaskStateT = 'pending' | 'progress' | 'complete' | 'late';
 
 export interface TaskStateI {
   title: TaskStateT;

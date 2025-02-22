@@ -11,7 +11,26 @@
 
 ## Servidor de Desarrollo
 
-  1. Ejecute `ng serve` para un servidor de desarrollo.
+  1. Clonar el repositorio:
+  ```markdown
+  git clone https://github.com/jjaramillodev/ngx-task-manager.git
+  ```
+
+  2. Navegar al directorio del proyecto:
+    ```markdown
+    cd ngx-task-manager
+    ```
+
+  3. Instalar las dependencias:
+  ```markdown
+  npm install
+  ```
+
+  4. Iniciar el servidor.
+  ```markdown
+  ng serve
+  ```
+
   2. Navegue a `http://localhost:4200/`.
 
 ## Build de Aplicación

@@ -17,6 +17,9 @@
       padding: 8px 16px;
       background-color: #7D3CDF;
       border-radius: 5px;
+      &:disabled {
+        opacity: 0.6;
+      }
     }
   }
 }

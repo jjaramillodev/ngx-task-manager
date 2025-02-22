@@ -12,6 +12,6 @@
     >
       <input appFormField type="date" [formControl]="ctrlsFormTask.expiration_date" />
     </app-form-field>
-    <button class="form__submit" type="submit">Nueva Tarea</button>
+    <button class="form__submit" type="submit" [disabled]="isLoading()">Nueva Tarea</button>
   </form>
 </div>
